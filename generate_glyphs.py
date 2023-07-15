@@ -16,6 +16,8 @@ glyphs = "".join([
     "쏫쑛찦펲",
     # Curly quotes
     "“”‘’",
+    # Arrow symbols
+    "←↑↓→↘↗↖↙↩↪",
 ])
 
 print(glyphs, end="")
