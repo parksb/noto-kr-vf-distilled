@@ -18,6 +18,8 @@ glyphs = "".join([
     "“”‘’",
     # Arrow symbols
     "←↑↓→↘↗↖↙↩↪",
+    # Mathematical characters
+    "π",
 ])
 
 print(glyphs, end="")
