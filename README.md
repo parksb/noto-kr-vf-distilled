@@ -1,28 +1,38 @@
-# noto-kr-vf-distilled
+# VF Distilled
 
-용량을 줄인 NotoSans-KR, NotoSerif-KR, Pretendard, Hahmlet 가변 폰트.
+![](https://user-images.githubusercontent.com/6410412/253803656-ab077d42-d48f-4a5a-9361-d3cc7473d4b7.png)
 
-데모: https://akngs.github.io/noto-kr-vf-distilled/
+용량을 줄인 가변 폰트. ASCII 95자, KSC5601 2350자, KS 코드 완성형 한글의 추가 글자 제안 (노민지, 윤민구) 224자, 그리고 여기에 몇 개의 추가 문자를 포함합니다.
 
-파일 다운로드:
+- Noto Sans KR
+- Noto Serif KR
+- Pretendard
+- RobotoMono
 
-- [NotoSansKR-VF-distilled.woff2](https://akngs.github.io/noto-kr-vf-distilled/NotoSansKR-VF-distilled.woff2) (원본: [NotoSansKR-VF.ttf](https://github.com/googlefonts/noto-cjk/blob/main/Sans/Variable/TTF/Subset/NotoSansKR-VF.ttf))
-- [NotoSerifKR-VF-distilled.woff2](https://akngs.github.io/noto-kr-vf-distilled/NotoSerifKR-VF-distilled.woff2) (원본: [NotoSerifKR-VF.ttf](https://github.com/googlefonts/noto-cjk/blob/main/Serif/Variable/TTF/Subset/NotoSerifKR-VF.ttf))
-- [PretendardKR-VF-distilled.woff2](https://akngs.github.io/noto-kr-vf-distilled/PretendardKR-VF-distilled.woff2) (원본: [PretendardVariable.ttf](https://github.com/orioncactus/pretendard/tree/main/packages/pretendard/dist/public/variable/PretendardVariable.ttf))
-- [Hahmlet-VF-distilled.woff2](https://akngs.github.io/noto-kr-vf-distilled/Hahmlet-VF-distilled.woff2) (원본: [Hahmlet[wght].ttf](https://github.com/hyper-type/hahmlet/blob/master/fonts/variable/Hahmlet%5Bwght%5D.ttf))
+[akngs/noto-kr-vf-distilled](https://github.com/akngs/noto-kr-vf-distilled)에 curly quotes, 화살표 등 일부 특수문자를 추가한 버전입니다.
 
-변환 과정:
+```css
+@font-face {
+  font-family: 'Noto Sans VF Distilled';
+  src: url('https://cdn.jsdelivr.net/gh/parksb/cdn@master/font/NotoSansKR/woff2/NotoSansKR-VF-Distilled.woff2') format('woff2');
+  font-display: swap;
+}
 
-1. 일상에서 쓰이는 한글 자모 조합과 ASCII의 출력 가능한 문자들만 추출
-2. TTF를 WOFF2로 변환
+@font-face {
+  font-family: 'Noto Serif VF Distilled';
+  src: url('https://cdn.jsdelivr.net/gh/parksb/cdn@master/font/NotoSerifKR/woff2/NotoSerifKR-VF-Distilled.woff2') format('woff2');
+  font-display: swap;
+}
 
-구체적인 방법은 [Makefile](./Makefile)을 참고하세요. 단, 다음 소프트웨어/라이브러리가 설치되어 있어야 합니다.
+@font-face {
+  font-family: 'Pretendard VF Distilled';
+  src: url('https://cdn.jsdelivr.net/gh/parksb/cdn@master/font/Pretendard/woff2/Pretendard-VF-Distilled.woff2') format('woff2');
+  font-display: swap;
+}
 
-- Python 3 및 fonttools 라이브러리 (`pip install fonttools`)
-- woff2 유틸리티 (`brew install woff2`)
-
-폰트 원본 사이트:
-
-- Google Fonts: https://github.com/googlefonts/noto-cjk
-- Pretendard: https://github.com/orioncactus/pretendard
-- Hahmlet: https://github.com/hyper-type/hahmlet
+@font-face {
+  font-family: 'RobotoMono VF Distilled';
+  src: url('https://cdn.jsdelivr.net/gh/parksb/cdn@master/font/RobotoMono/woff2/RobotoMono-VF-Distilled.woff2') format('woff2');
+  font-display: swap;
+}
+```
