@@ -20,6 +20,8 @@ glyphs = "".join([
     "←↑↓→↘↗↖↙↩↪",
     # Mathematical characters
     "π",
+    # 漢字
+    "仮名"
 ])
 
 print(glyphs, end="")
